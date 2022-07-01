@@ -1,0 +1,42 @@
+a.scroll {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+    color: white;
+}
+
+
+/*la flèche est dessinée à partir de bordures auxquelles on applique ensuite une rotation de 45 degrés*/
+
+a.scroll .spanfleche {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: rotate(-45deg);
+    animation: btnscroll 2s infinite;
+}
+
+
+
+@keyframes btnscroll {
+    0% {
+
+        transform: rotate(-45deg) translate(0, 0);
+    }
+
+    20% {
+
+        transform: rotate(-45deg) translate(-10px, 10px);
+    }
+
+    40% {
+
+        transform: rotate(-45deg) translate(0, 0);
+    }
+}

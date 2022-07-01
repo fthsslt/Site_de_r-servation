@@ -1,0 +1,1 @@
+<?php $db=new PDO('mysql:host=localhost;dbname=zobir_reservation1;port=3306;charset=utf8','zobir_carabaffe', 'fathallah' ); ?>
